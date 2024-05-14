@@ -36,6 +36,9 @@
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
+  "peer-dependencies": {
+    "newt-client-js": "^3.3.2"
+  },
   "dependencies": {
     "@nuxt/kit": "^3.11.2",
     "defu": "^6.1.4",
