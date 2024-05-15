@@ -57,3 +57,5 @@ export const useNewtGetFirstContent = <T>(
     });
   });
 };
+
+export default newtClient;
