@@ -1,31 +1,38 @@
-# Nuxt Newt
+# nuxt-newt
 
 [![npm version][npm-version-src]][npm-version-href]
 [![npm downloads][npm-downloads-src]][npm-downloads-href]
 [![License][license-src]][license-href]
 [![Nuxt][nuxt-src]][nuxt-href]
 
-Newt integration for Nuxt.
-
-- [✨ &nbsp;Release Notes](/CHANGELOG.md)
-
-## Features
-
-<!-- Highlight some of the features your module provide here -->
-
-- ⛰ &nbsp;Foo
-- 🚠 &nbsp;Bar
-- 🌲 &nbsp;Baz
+[Newt](https://www.newt.so/) integration for [Nuxt](https://nuxt.com/).
 
 ## Quick Setup
 
-Install the module to your Nuxt application with one command:
+1. Install the module to your Nuxt application with one command
 
 ```bash
 npx nuxi module add nuxt-newt
 ```
 
-That's it! You can now use Nuxt Newt in your Nuxt app ✨
+2. Add `spaceUid` and `cdnApiToken` to the `newt` section of `nuxt.config.ts`
+
+```ts
+export default defineNuxtConfig({
+  modules: ["nuxt-newt"],
+  newt: {
+    spaceUid: process.env.NEWT_SPACE_UID,
+    cdnApiToken: process.env.NEWT_CDN_API_TOKEN,
+  },
+})
+```
+
+3. Add your Newt `spaceUid` and `cdnApiToken` to the to the `.env` file
+
+```.env
+NEWT_SPACE_UID='YOUR_SPACE_UID'
+NEWT_CDN_API_TOKEN='YOUR_CDN_API_TOKEN'
+```
 
 ## Contribution
 
