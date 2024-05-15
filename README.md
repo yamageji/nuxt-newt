@@ -27,7 +27,7 @@ export default defineNuxtConfig({
 })
 ```
 
-3. Add your Newt `spaceUid` and `cdnApiToken` to the to the `.env` file
+3. Add your Newt `spaceUid` and `cdnApiToken` to the `.env` file
 
 ```.env
 NEWT_SPACE_UID='YOUR_SPACE_UID'
