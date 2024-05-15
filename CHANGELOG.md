@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.2.0
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.1.0...v1.2.0)
+
+### 🚀 Enhancements
+
+- Add LICENSE ([751a9f9](https://github.com/yamageji/nuxt-newt/commit/751a9f9))
+
+### 🩹 Fixes
+
+- READMEを修正 ([090c36b](https://github.com/yamageji/nuxt-newt/commit/090c36b))
+- Composables に default export の追加 ([0780234](https://github.com/yamageji/nuxt-newt/commit/0780234))
+- README ([191653f](https://github.com/yamageji/nuxt-newt/commit/191653f))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.1.0
 
 
