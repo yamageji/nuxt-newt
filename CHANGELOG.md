@@ -1,6 +1,20 @@
 # Changelog
 
 
+## v1.2.1
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.2.0...v1.2.1)
+
+### 🩹 Fixes
+
+- Fetch オプションに globalThis.fetch を使用 ([5b0fb05](https://github.com/yamageji/nuxt-newt/commit/5b0fb05))
+- README ([b38574f](https://github.com/yamageji/nuxt-newt/commit/b38574f))
+- Add keywords to package.json ([08d1ead](https://github.com/yamageji/nuxt-newt/commit/08d1ead))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.2.0
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.1.0...v1.2.0)
