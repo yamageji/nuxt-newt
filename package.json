@@ -4,7 +4,7 @@
   "description": "Newt integration for Nuxt",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yamageji/nuxt-newt"
+    "url": "git+https://github.com/yamageji/nuxt-newt.git"
   },
   "homepage": "https://github.com/yamageji/nuxt-newt#readme",
   "bugs": {
