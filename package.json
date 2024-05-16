@@ -11,6 +11,11 @@
     "url": "https://github.com/yamageji/nuxt-newt/issues"
   },
   "license": "MIT",
+  "keywords": [
+    "Nuxt",
+    "Newt",
+    "CMS"
+  ],
   "author": "yamageji",
   "type": "module",
   "exports": {
