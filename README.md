@@ -34,6 +34,45 @@ NEWT_SPACE_UID='YOUR_SPACE_UID'
 NEWT_CDN_API_TOKEN='YOUR_CDN_API_TOKEN'
 ```
 
+## Usage
+### useNewtGetContents: Get contents
+```vue
+<script setup lang="ts">
+const { data } = await useNewtGetContents<T>(key, {
+  appUid: 'YOUR_APP_UID',
+  modelUid: 'YOUR_MODEL_UID',
+});
+const articles = data.value?.items;
+</script>
+```
+
+### useNewtGetContent: Get a content
+```vue
+<script lang='ts' setup>
+const { data } = await useNewtGetContent<T>(key, {
+  appUid: 'YOUR_APP_UID',
+  modelUid: 'YOUR_MODEL_UID',
+  contentId: 'YOUR_CONTENT_ID',
+});
+</script>
+```
+
+### useNewtGetFirstContent: Get first content
+```vue
+<script lang='ts' setup>
+const { data } = await useNewtGetFirstContent<T>(key, {
+  appUid: 'YOUR_APP_UID',
+  modelUid: 'YOUR_MODEL_UID',
+  query: {
+    // Add your query here
+  },
+});
+</script>
+```
+
+### See below for details
+- [Newt client](https://github.com/Newt-Inc/newt-client-js?tab=readme-ov-file#documentation--references)
+
 ## Contribution
 
 <details>
