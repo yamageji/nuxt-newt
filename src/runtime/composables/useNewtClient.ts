@@ -15,6 +15,7 @@ const newtClient = () => {
       ? config.public.newt.cdnApiToken
       : config.newt.cdnApiToken,
     apiType: config.public.newt.apiType,
+    fetch: globalThis.fetch,
   });
 };
 
@@ -57,5 +58,3 @@ export const useNewtGetFirstContent = <T>(
     });
   });
 };
-
-export default newtClient;
