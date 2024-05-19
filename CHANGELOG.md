@@ -1,6 +1,22 @@
 # Changelog
 
 
+## v1.3.0
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.2.1...v1.3.0)
+
+### 🚀 Enhancements
+
+- データfetchを$fetchに変更 ([fd56829](https://github.com/yamageji/nuxt-newt/commit/fd56829))
+
+### 🩹 Fixes
+
+- Repository.url ([d6579e1](https://github.com/yamageji/nuxt-newt/commit/d6579e1))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.2.1
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.2.0...v1.2.1)
