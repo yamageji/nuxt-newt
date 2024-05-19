@@ -1,7 +1,15 @@
 <script setup lang="ts">
 import type { Article } from '~/types/article';
 
-const { data } = await useNewtGetContents<Article>('articles', { appUid: 'blog', modelUid: 'article' });
+const { data } = await useNewtGetContents<Article>(
+  'articles',
+  {
+    appUid: 'blog',
+    modelUid: 'article',
+    query: {
+      limit: 10,
+    },
+  });
 const articles = data.value?.items;
 </script>
 

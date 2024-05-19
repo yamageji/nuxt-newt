@@ -41,13 +41,10 @@
     "test:watch": "vitest watch",
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
-  "peer-dependencies": {
-    "newt-client-js": "^3.3.2"
-  },
   "dependencies": {
     "@nuxt/kit": "^3.11.2",
     "defu": "^6.1.4",
-    "newt-client-js": "^3.3.2"
+    "qs": "^6.12.1"
   },
   "devDependencies": {
     "@nuxt/devtools": "^1.2.0",
@@ -56,8 +53,10 @@
     "@nuxt/schema": "^3.11.2",
     "@nuxt/test-utils": "^3.12.1",
     "@types/node": "^20.12.11",
+    "@types/qs": "^6.9.15",
     "changelogen": "^0.5.5",
     "eslint": "^9.2.0",
+    "newt-client-js": "^3.3.2",
     "nuxt": "^3.11.2",
     "typescript": "latest",
     "vitest": "^1.6.0",
