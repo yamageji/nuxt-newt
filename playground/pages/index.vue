@@ -8,6 +8,8 @@ const { data } = await useNewtGetContents<Article>(
     modelUid: 'article',
     query: {
       limit: 10,
+      select: ['_id', 'title', 'slug', '_sys'],
+      title: '[match]Fictitious',
     },
   });
 const articles = data.value?.items;
@@ -23,6 +25,7 @@ const articles = data.value?.items;
       >
         <NuxtLink :to="`/articles/${article.slug}`">
           {{ article.title }}
+          {{ article._sys.createdAt }}
         </NuxtLink>
       </li>
     </ul>

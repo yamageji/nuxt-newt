@@ -24,12 +24,8 @@ export default defineNuxtModule<ModuleOptions>({
     if (!options.cdnApiToken) {
       throw new Error('cdnApiToken is required');
     }
-    if (!options.apiType) {
-      options.apiType = 'cdn';
-    }
-    if (!options.target) {
-      options.target = 'server';
-    }
+    options.apiType = options.apiType || 'cdn';
+    options.target = options.target || 'server';
 
     nuxt.options.runtimeConfig.public.newt = defu(
       nuxt.options.runtimeConfig.public.newt, {

@@ -6,7 +6,6 @@ import type {
 } from 'newt-client-js/dist/types';
 
 import { useRuntimeConfig, useAsyncData } from 'nuxt/app';
-import { parseQuery } from '../utils/parseQuery';
 
 const createConfig = () => {
   const config = useRuntimeConfig();
@@ -34,13 +33,8 @@ export const useNewtGetContents = <T>(
 
   const url = new URL(`/v1/${appUid}/${modelUid}`, baseUrl.toString());
 
-  if (query && Object.keys(query).length) {
-    const { encoded } = parseQuery(query);
-    url.search = encoded;
-  }
-
   return useAsyncData<Contents<T>>(key,
-    () => $fetch(url.toString(), { headers }),
+    () => $fetch(url.toString(), { headers, query }),
   );
 };
 
@@ -56,13 +50,8 @@ export const useNewtGetContent = <T>(
 
   const url = new URL(`/v1/${appUid}/${modelUid}/${contentId}`, baseUrl.toString());
 
-  if (query && Object.keys(query).length) {
-    const { encoded } = parseQuery(query);
-    url.search = encoded;
-  }
-
   return useAsyncData<T>(key,
-    () => $fetch(url.toString(), { headers }),
+    () => $fetch(url.toString(), { headers, query }),
   );
 };
 
