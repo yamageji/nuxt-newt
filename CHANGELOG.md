@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.1
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.0...v1.3.1)
+
+### 🩹 Fixes
+
+- Queryの修正 ([ac69efc](https://github.com/yamageji/nuxt-newt/commit/ac69efc))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.3.0
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.2.1...v1.3.0)
