@@ -41,8 +41,10 @@ NEWT_CDN_API_TOKEN='YOUR_CDN_API_TOKEN'
 const { data } = await useNewtGetContents<T>(key, {
   appUid: 'YOUR_APP_UID',
   modelUid: 'YOUR_MODEL_UID',
+  query: {
+    // Add your query here (optional)
+  },
 });
-const articles = data.value?.items;
 </script>
 ```
 
@@ -53,6 +55,9 @@ const { data } = await useNewtGetContent<T>(key, {
   appUid: 'YOUR_APP_UID',
   modelUid: 'YOUR_MODEL_UID',
   contentId: 'YOUR_CONTENT_ID',
+  query: {
+    // Add your query here (optional)
+  },
 });
 </script>
 ```
@@ -64,14 +69,14 @@ const { data } = await useNewtGetFirstContent<T>(key, {
   appUid: 'YOUR_APP_UID',
   modelUid: 'YOUR_MODEL_UID',
   query: {
-    // Add your query here
+    // Add your query here (optional)
   },
 });
 </script>
 ```
 
-### See below for details
-- [Newt client](https://github.com/Newt-Inc/newt-client-js?tab=readme-ov-file#documentation--references)
+### query details
+- [CDN API Reference | Newt](https://developers.newt.so/apis/cdn?_gl=1*toh7b6*_ga*MzAyMDYzOTIwLjE2ODIwODg4OTU.*_ga_9RZWH2CVVG*MTcxNjI5OTgyOS4yNi4xLjE3MTYzMDAwMDIuNTQuMC4w#tag/contents_general/Queries/Filters)
 
 ## Contribution
 
