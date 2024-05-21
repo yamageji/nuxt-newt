@@ -1,6 +1,21 @@
 # Changelog
 
 
+## v1.3.2
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.1...v1.3.2)
+
+### 🩹 Fixes
+
+- READMEを修正 ([1bcf959](https://github.com/yamageji/nuxt-newt/commit/1bcf959))
+- Packageの整理 ([cca85b9](https://github.com/yamageji/nuxt-newt/commit/cca85b9))
+- Tokenを修正 ([b029d83](https://github.com/yamageji/nuxt-newt/commit/b029d83))
+- Packages ([31fb8ee](https://github.com/yamageji/nuxt-newt/commit/31fb8ee))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.3.1
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.0...v1.3.1)
