@@ -40,7 +40,7 @@ export default defineNuxtModule<ModuleOptions>({
       });
 
     if (!nuxt.options.dev && options.target !== 'all') {
-      nuxt.options.runtimeConfig.public.newt.cdnApiToken = '';
+      nuxt.options.runtimeConfig.public.newt.cdnApiToken = undefined;
     }
 
     const { resolve } = createResolver(import.meta.url);

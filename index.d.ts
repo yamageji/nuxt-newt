@@ -7,7 +7,7 @@ declare module 'nuxt/schema' {
   interface PublicRuntimeConfig {
     newt: {
       spaceUid: string;
-      cdnApiToken: string;
+      cdnApiToken: string | undefined;
       apiType: 'cdn' | 'api';
     };
   }
