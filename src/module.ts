@@ -30,7 +30,9 @@ export default defineNuxtModule<ModuleOptions>({
     nuxt.options.runtimeConfig.public.newt = defu(
       nuxt.options.runtimeConfig.public.newt, {
         spaceUid: options.spaceUid,
-        cdnApiToken: options.cdnApiToken,
+        cdnApiToken: (!nuxt.options.dev && options.target === 'server')
+          ? undefined
+          : options.cdnApiToken,
         apiType: options.apiType,
       });
 
@@ -38,10 +40,6 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.runtimeConfig.newt, {
         cdnApiToken: options.cdnApiToken,
       });
-
-    if (!nuxt.options.dev && options.target !== 'all') {
-      nuxt.options.runtimeConfig.public.newt.cdnApiToken = undefined;
-    }
 
     const { resolve } = createResolver(import.meta.url);
     addImportsDir(resolve('./runtime/composables'));
