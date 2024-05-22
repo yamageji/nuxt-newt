@@ -1,6 +1,24 @@
 # Changelog
 
 
+## v1.3.3
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.2...v1.3.3)
+
+### 🩹 Fixes
+
+- CdnApiTokenの型を修正 ([83422cb](https://github.com/yamageji/nuxt-newt/commit/83422cb))
+- Remove test files ([d3ae9cf](https://github.com/yamageji/nuxt-newt/commit/d3ae9cf))
+- Npm command ([264836f](https://github.com/yamageji/nuxt-newt/commit/264836f))
+- Remove test files" ([9d84a39](https://github.com/yamageji/nuxt-newt/commit/9d84a39))
+- Npm command" ([480cea4](https://github.com/yamageji/nuxt-newt/commit/480cea4))
+- CdnApiTokenの修正 ([d02134c](https://github.com/yamageji/nuxt-newt/commit/d02134c))
+- 型の修正 ([3321287](https://github.com/yamageji/nuxt-newt/commit/3321287))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.3.2
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.1...v1.3.2)
