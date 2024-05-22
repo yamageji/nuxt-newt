@@ -40,8 +40,7 @@ export const useNewtGetContents = <T>(
 export const useNewtGetContent = <T>(
   key: string,
   { appUid, modelUid, contentId, query }: GetContentParams,
-
-) => {
+): AsyncData<T | null, NuxtError<unknown> | null> => {
   if (!appUid) throw new Error('appUid parameter is required.');
   if (!modelUid) throw new Error('modelUid parameter is required.');
   if (!contentId) throw new Error('contentId parameter is required.');
