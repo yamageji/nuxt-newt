@@ -6,6 +6,7 @@ import type {
 } from 'newt-client-js/dist/types';
 
 import { useRuntimeConfig, useAsyncData } from 'nuxt/app';
+import type { AsyncData, NuxtError } from 'nuxt/app';
 
 const createConfig = () => {
   const config = useRuntimeConfig();
@@ -23,7 +24,7 @@ const createConfig = () => {
 export const useNewtGetContents = <T>(
   key: string,
   { appUid, modelUid, query }: GetContentsParams,
-) => {
+): AsyncData<Contents<T> | null, NuxtError<unknown> | null> => {
   if (!appUid) throw new Error('appUid parameter is required.');
   if (!modelUid) throw new Error('modelUid parameter is required.');
 
@@ -39,6 +40,7 @@ export const useNewtGetContents = <T>(
 export const useNewtGetContent = <T>(
   key: string,
   { appUid, modelUid, contentId, query }: GetContentParams,
+
 ) => {
   if (!appUid) throw new Error('appUid parameter is required.');
   if (!modelUid) throw new Error('modelUid parameter is required.');
@@ -56,7 +58,8 @@ export const useNewtGetContent = <T>(
 export const useNewtGetFirstContent = async <T>(
   key: string,
   { appUid, modelUid, query }: GetFirstContentParams,
-) => {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+): Promise<any> => {
   if (query && query.limit) {
     throw new Error('query.limit parameter cannot have a value.');
   }
