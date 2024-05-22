@@ -31,7 +31,7 @@ export default defineNuxtModule<ModuleOptions>({
       nuxt.options.runtimeConfig.public.newt, {
         spaceUid: options.spaceUid,
         cdnApiToken: (!nuxt.options.dev && options.target === 'server')
-          ? undefined
+          ? null
           : options.cdnApiToken,
         apiType: options.apiType,
       });
