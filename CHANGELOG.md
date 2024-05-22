@@ -1,6 +1,19 @@
 # Changelog
 
 
+## v1.3.4
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.3...v1.3.4)
+
+### 🩹 Fixes
+
+- 型の修正 ([ef65114](https://github.com/yamageji/nuxt-newt/commit/ef65114))
+- CdnApiTokenの型を修正 ([eff95d7](https://github.com/yamageji/nuxt-newt/commit/eff95d7))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.3.3
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.2...v1.3.3)
