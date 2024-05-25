@@ -12,7 +12,9 @@ const createConfig = () => {
   const config = useRuntimeConfig();
 
   const spaceUid = config.public.newt.spaceUid;
-  const token = config.public.newt.cdnApiToken ?? config.newt.cdnApiToken;
+  const token = config.newt
+    ? config.newt.cdnApiToken
+    : config.public.newt.cdnApiToken;
   const apiType = config.public.newt.apiType;
 
   const baseUrl = new URL(`https://${spaceUid}.${apiType}.newt.so`);

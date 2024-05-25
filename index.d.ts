@@ -1,13 +1,13 @@
 declare module 'nuxt/schema' {
   interface RuntimeConfig {
     newt: {
-      cdnApiToken: string;
+      cdnApiToken: string | undefined;
     };
   }
   interface PublicRuntimeConfig {
     newt: {
-      spaceUid: string;
-      cdnApiToken: string | null;
+      spaceUid: string | undefined;
+      cdnApiToken: string | undefined;
       apiType: 'cdn' | 'api';
     };
   }
