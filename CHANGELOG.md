@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v1.3.5
+
+[compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.4...v1.3.5)
+
+### 🩹 Fixes
+
+- Token ([5256a9d](https://github.com/yamageji/nuxt-newt/commit/5256a9d))
+
+### ❤️ Contributors
+
+- Yamageji <koyama.shigehito.chabatake102@gmail.com>
+
 ## v1.3.4
 
 [compare changes](https://github.com/yamageji/nuxt-newt/compare/v1.3.3...v1.3.4)
